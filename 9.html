@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        form { max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input[type="text"], input[type="email"], select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        .radio-group, .checkbox-group { display: flex; gap: 10px; align-items: center; }
+        button { background-color: #007BFF; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Registration Form</h2>
+
+    <form action="#" method="post">
+        <div>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@company.com" required>
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="dept">Department:</label>
+            <select id="dept" name="department">
+                <option value="it">Information Technology</option>
+                <option value="hr">Human Resources</option>
+                <option value="finance">Finance</option>
+                <option value="sales">Sales</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Skills:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="JS">
+                <label for="js">JavaScript</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="address">Residential Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+        </div>
+
+        <button type="submit">Register Employee</button>
+        <button type="reset" style="background-color: #6c757d;">Clear Form</button>
+    </form>
+
+</body>
+</html>
